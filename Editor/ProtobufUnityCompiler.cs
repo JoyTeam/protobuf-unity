@@ -102,6 +102,7 @@ namespace E7.Protobuf
         {
             //Do not compile changes coming from UPM package.
             if (protoFileSystemPath.Contains("Packages/com.e7.protobuf-unity")) return false;
+            if (protoFileSystemPath.Contains("PackageCache/com.e7.protobuf-unity")) return false;
 
             if (Path.GetExtension(protoFileSystemPath) == ".proto")
             {
